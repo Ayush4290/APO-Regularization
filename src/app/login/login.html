@@ -1,0 +1,31 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Login</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <form [formGroup]="loginFG" (submit)="onSubmit()">
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>User Name</mat-label>
+        <input matInput type="username" id="username" formControlName="username" placeholder="Enter your username"
+          required />
+        <mat-error *ngIf="fc['username']?.invalid">
+          <span *ngIf="fc['username']?.errors?.['required']">Enter username.</span>
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Password</mat-label>
+        <input matInput type="password" id="password" formControlName="password" placeholder="Enter your password"
+          required />
+        <mat-error *ngIf="fc['password']?.invalid">
+          <span *ngIf="fc['password']?.errors?.['required']">Enter password.</span>
+        </mat-error>
+      </mat-form-field>
+
+      <div class="actions">
+        <button mat-raised-button color="primary" type="submit">Login</button>
+        <button mat-button color="accent" type="button">Forgot Password?</button>
+      </div>
+    </form>
+  </mat-card-content>
+</mat-card>

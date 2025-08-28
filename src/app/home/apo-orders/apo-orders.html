@@ -1,0 +1,28 @@
+<button mat-button class="tab-mat-button tab-mat-button-font active" (click)="onTabChange(enumStatus.ALL)">
+    All ({{this.allCount}})
+</button>
+<button *ngIf="this.roleId==enumRole.APO" mat-button class="tab-mat-button tab-mat-button-font"
+    (click)="onTabChange(enumStatus.DRAFT)">
+    Draft ({{this.draftCount}})
+</button>
+<button mat-button class="tab-mat-button tab-mat-button-font" (click)="onTabChange(enumStatus.PENDING)">
+    Pending ({{this.pendingCount}})
+</button>
+<button *ngIf="this.roleId==enumRole.APO ||this.roleId==enumRole.DOP_L1 || this.roleId==enumRole.DOP_L2" mat-button
+    class="tab-mat-button tab-mat-button-font" (click)="onTabChange(enumStatus.RETURNED)">
+    Returned ({{this.returnedCount}})
+</button>
+<button *ngIf="this.roleId==enumRole.APO ||this.roleId==enumRole.DOP_L1 || this.roleId==enumRole.DOP_L3" mat-button class="tab-mat-button tab-mat-button-font" (click)="onTabChange(enumStatus.SUBMITTED)">
+    Submitted ({{this.submittedCount}})
+</button>
+<button *ngIf="this.roleId==enumRole.APO ||this.roleId==enumRole.DOP_L1 || this.roleId==enumRole.DOP_L2" mat-button class="tab-mat-button tab-mat-button-font" (click)="onTabChange(enumStatus.REJECTED)">
+    Rejected ({{this.rejectedCount}})
+</button>
+<button *ngIf="this.roleId==enumRole.APO ||this.roleId==enumRole.DOP_L1 || this.roleId==enumRole.DOP_L2" mat-button class="tab-mat-button tab-mat-button-font" (click)="onTabChange(enumStatus.APPROVED)">
+    Approved ({{this.approvedCount}})
+</button>
+<button *ngIf="this.roleId==enumRole.DOP_L1 || this.roleId==enumRole.DOP_L2" mat-button
+    class="tab-mat-button tab-mat-button-font" (click)="onTabChange(enumStatus.CONSULT)">
+    Consult ({{this.consultCount}})
+</button>
+<app-apo-orders-list [data]='allData'></app-apo-orders-list>

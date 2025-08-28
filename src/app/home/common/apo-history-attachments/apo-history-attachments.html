@@ -1,0 +1,82 @@
+<mat-tab-group>
+    <mat-tab label="History" class="audit-tab-mat-button">
+        <div class="main-layout-flex audit-history-attachment-button-layout">
+            <button mat-button class="audit-history-attachment-button active">
+                All
+            </button>
+            <button mat-button class="audit-history-attachment-button" style="margin-left: 5px;">
+                Department
+            </button>
+            <button mat-button class="audit-history-attachment-button" style="margin-left: 5px;">
+                User
+            </button>
+        </div>
+        <div class="audit-attachment-content">
+            <div class="main-layout-flex">
+                <div class="main-layout-flex">
+                    <span class="audit-history-name">Name</span>
+                    <button mat-button class="status-button submitted-button" [ngClass]="" style="margin-left: 100px;">
+                        <img src="\assets\images\submitted-icon.png">
+                        Submit
+                    </button>
+                </div>
+            </div>
+            <div class="main-layout-grid">
+                <span class="audit-history-department">
+                    Department: DOP
+                    <span class="audit-history-department reviewer">REVIEWER</span>
+                </span>
+                <label class="audit-history-datetime">DateTime / Days</label>
+                <label class="audit-history-description">Details</label>
+            </div>
+        </div>
+    </mat-tab>
+    <mat-tab label="Attachment" class="audit-tab-mat-button">
+        <div class="main-layout-flex audit-history-attachment-button-layout">
+            <button mat-button class="audit-history-attachment-button active">
+                All
+            </button>
+            <button mat-button class="audit-history-attachment-button" style="margin-left: 5px;">
+                Department
+            </button>
+            <button mat-button class="audit-history-attachment-button" style="margin-left: 5px;">
+                User
+            </button>
+        </div>
+        <div mat-dialog-content>
+            <div class="audit-attachment-user-details">
+                <div class="main-layout-flex">
+                    <div class="main-layout-flex">
+                        <span class="audit-history-name">Name</span>
+                        <button mat-button class="status-button submitted-button" [ngClass]=""
+                            style="margin-left: 100px;">
+                            <img src="\assets\images\submitted-icon.png">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+                <div class="main-layout-grid">
+                    <span class="audit-history-department">
+                        Department: DOP
+                        <span class="audit-history-department reviewer">REVIEWER</span>
+                    </span>
+                </div>
+            </div>
+            <label class="audit-attachment-type-title">APO Document</label>
+            <div class="audit-attachment-content">
+                <div class="main-layout-flex">
+                    <div class="main-layout-flex">
+                        <span class="audit-attachment-name">abc.pdf</span>
+                    </div>
+                    <div class="main-layout-flex" style="margin-left: 50px;">
+                        <span class="audit-attachment-date">/ 08-Aug-2025</span>
+                        <img src="\assets\images\open-attachment.png">
+                        <img src="\assets\images\download-attachment.png">
+                        <img src="\assets\images\delete-attachment.png">
+                    </div>
+                </div>
+                <span class="audit-attachment-description">document details</span>
+            </div>
+        </div>
+    </mat-tab>
+</mat-tab-group>

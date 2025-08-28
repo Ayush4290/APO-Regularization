@@ -1,0 +1,27 @@
+<p class="show-apo-num-p">e-patravalli (Customised & Dynamic e-file Service)</p>
+<div class="show-apo-num">
+    <div class="main-layout-flex">
+        <button mat-icon-button color="accent" class="circle-button" (click)="goToOrders()">
+            <img src="\assets\images\back-button-icon.png">
+        </button>
+        <div class="main-layout-flex" style="cursor: pointer;" (click)="goToOrders()">
+            <button style="border: none; background-color: transparent;">
+                <img src="\assets\images\folder-icon.png">
+            </button>
+            <label class="show-apo-orders-title">
+                <!-- {{'apoTitle' | translate}} -->
+            </label>
+        </div>
+        <div class="main-layout-flex" *ngIf="this.apoOrderNo">
+            <button style="border: none; background-color: transparent; margin-top: 5px;">
+                <img src="\assets\images\arrow-icon.png">
+            </button>
+            <label class="show-apo-orders-number">
+                {{apoOrderNo}}
+            </label>
+        </div>
+        <button *ngIf="isNewRequest" mat-button class="button-new-request" (click)="newRequestDialog()">
+            + New Request
+        </button>
+    </div>
+</div>
