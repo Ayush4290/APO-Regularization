@@ -4,9 +4,9 @@
 
 html,
 body {
-  height: 100% !important;
-  margin: 0 !important;
-  background-color: #fafafa !important;
+  height:auto ;
+  margin: 0 ;
+  background-color: #fafafa ;
 } 
 
 .home-container {
