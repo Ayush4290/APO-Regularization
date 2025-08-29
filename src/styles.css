@@ -20,6 +20,64 @@ body {
 .main-layout .mat-mdc-form-field-infix {
     padding: 9px 0 !important ;
 }
+.mat-datepicker-content {
+    background: white !important;
+    border: 1px solid #ebebeb;
+    border-radius: 4px !important;
+    margin-top: -80px;
+}
+.mat-mdc-form-field-icon-suffix {
+    margin-top: -14px !important;
+}
+.mat-calendar-controls {
+    margin: 0 !important;
+    background: #F6F6F6;
+    margin-bottom: 15px !important;
+}
+.main-layout .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mat-mdc-notch-piece {
+    border-color: #DCDCDC;
+
+}
+.mat-mdc-dialog-panel.mdc-text-field--outlined:not(.mdc-text-field--disabled) .mat-mdc-notch-piece {
+    border-color: #DCDCDC;
+}
+ .mdc-notched-outline__trailing{
+border-top-right-radius:8px !important;
+border-bottom-right-radius:8px !important;
+border-top-left-radius:0px !important;
+border-bottom-left-radius:0px !important;
+}
+
+.mdc-notched-outline__leading{
+border-top-left-radius:8px !important;
+border-bottom-left-radius:8px !important;
+border-top-right-radius:0px !important;
+border-bottom-right-radius:0px !important;
+}
+.mat-mdc-select-panel-above div.mat-mdc-select-panel {
+    background: white !important;
+    border: 1px solid #dcdcdc;
+    padding: 0 !important;
+}
+ div.mat-mdc-select-panel {
+    background: white !important;
+    border: 1px solid #dcdcdc;
+    padding: 0 !important;
+}
+.main-layout .mat-mdc-option:hover:not(.mdc-list-item--disabled) {
+    background-color: #e87b31 !important;
+    color: white !important;
+}
+.main-layout .mat-mdc-option:focus.mdc-list-item, .mat-mdc-option.mat-mdc-option-active.mdc-list-item{
+      background-color: #e87b31 !important;
+    color: white !important;
+}
+.main-layout .mat-mdc-option{
+  line-height: 40px !important;
+}
+.mat-mdc-dialog-container .mat-mdc-form-field-infix {
+    padding: 10px 0 !important;
+}
 /*  --------- End Css  29-08-25 ----------- */
 
 
@@ -226,7 +284,7 @@ body {
 .button-container {
     display: flex;
     justify-content: flex-end;
-    width: 100%;
+    /* width: 100%; */
 }
 .button-new-request {
     width: 176px !important;
@@ -249,7 +307,6 @@ body {
 
 
 .main-layout {
-<<<<<<< Updated upstream
     opacity: 1 !important;
     gap: 24px !important;
     width: 94% !important;
@@ -258,20 +315,7 @@ body {
     border: 1px solid #c1c1c1;
     margin: 30px 0;
     border-radius: 10px !important;
-=======
-  opacity: 1 !important;
-  gap: 4px !important;
-  width: 94% !important;
-  height: 10% !important;
-  border-top-right-radius: 8px !important;
-  border-bottom-right-radius: 8px !important;
-  border-bottom-left-radius: 8px !important;
-  padding: 24px !important;
-  background-color: #FFFFFF !important;
-  display: flex;                 /* make layout flex */
-  flex-direction: column;
-  background-color: green;
->>>>>>> Stashed changes
+
 }
 
 .search-container {
@@ -293,6 +337,7 @@ body {
 
 .main-layout-flex {
   display: flex;
+  width: 100%;
 }
 
 .main-layout-flex.audit {
@@ -552,17 +597,17 @@ body {
 }
 
 .attachment-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 52px;
-  border: 2px dashed #bbb;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: 500;
-  color: #555;
-  transition: all 0.2s ease-in-out;
-  background-color: #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    border: 2px dashed #dcdcdc;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: normal;
+    color: black;
+    transition: all 0.2s ease-in-out;
+    background-color: #ffffff;
 }
 
 .attachment-box-other {
