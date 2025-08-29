@@ -84,6 +84,11 @@ border-bottom-right-radius:0px !important;
 .mat-mdc-tab-labels .mdc-tab--active {
     background: #ea781a;
     border-radius: 8px !important;
+}
+.mat-mdc-tab-label-container {
+    border: none !important;
+}
+.mat-mdc-tab-list .mat-focus-indicator {
     height: 34px !important;
 }
 .mdc-tab-indicator .mdc-tab-indicator__content {
