@@ -102,24 +102,30 @@ body {
   padding-right: 8px !important;
   padding-left: 8px !important;
   border-radius: 2px !important;
+  background-color: transparent !important;
+  border: none !important;
+  color: #5C5C5C !important;
 }
+
 
 .tab-mat-button.active {
   color: #EA781A !important;
   background-color: #FFFFFF !important;
+  border-bottom: 2px solid #EA781A !important;
 }
 
 .tab-mat-button-font {
   font-family: Roboto !important;
   font-weight: 400 !important;
-  font-style: Regular !important;
+  font-style: normal !important;
   font-size: 15px !important;
   line-height: 22px !important;
   letter-spacing: 0% !important;
   text-align: center !important;
   vertical-align: middle !important;
-  color: #5C5C5C !important;
+  color: inherit !important;
 }
+
 
 .mat-button {
   width: 200px !important;
@@ -217,25 +223,33 @@ body {
   border-bottom: 4px solid #11A133 !important;
 }
 
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
 .button-new-request {
-  width: 176px !important;
-  height: 38px !important;
-  opacity: 1 !important;
-  left: 860px !important;
-  gap: 4px !important;
-  border-radius: 6px !important;
-  color: #FFFFFF !important;
-  background-color: #E87B31 !important;
-  animation-duration: 0ms !important;
-  font-family: Roboto !important;
-  font-weight: 500 !important;
-  font-style: Medium !important;
-  font-size: 14px !important;
-  line-height: 22px !important;
-  letter-spacing: 0% !important;
+    width: 176px !important;
+    height: 38px !important;
+    opacity: 1 !important;
+    gap: 4px !important;
+    border-radius: 6px !important;
+    color: #FFFFFF !important;
+    background-color: #E87B31 !important;
+    animation-duration: 0ms !important;
+    font-family: Roboto !important;
+    font-weight: 500 !important;
+    font-style: Medium !important;
+    font-size: 14px !important;
+    line-height: 22px !important;
+    letter-spacing: 0% !important;
+    margin-right: 80px;
+
 }
 
+
 .main-layout {
+<<<<<<< Updated upstream
     opacity: 1 !important;
     gap: 24px !important;
     width: 94% !important;
@@ -244,7 +258,34 @@ body {
     border: 1px solid #c1c1c1;
     margin: 30px 0;
     border-radius: 10px !important;
+=======
+  opacity: 1 !important;
+  gap: 4px !important;
+  width: 94% !important;
+  height: 10% !important;
+  border-top-right-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
+  border-bottom-left-radius: 8px !important;
+  padding: 24px !important;
+  background-color: #FFFFFF !important;
+  display: flex;                 /* make layout flex */
+  flex-direction: column;
+  background-color: green;
+>>>>>>> Stashed changes
 }
+
+.search-container {
+  display: flex;
+  justify-content: flex-end;     
+  margin-bottom: 16px;          
+  width: 100%;
+  
+}
+
+.search-container mat-form-field {
+  width: 250px;    
+}
+
 
 .main-layout-grid {
   display: grid;

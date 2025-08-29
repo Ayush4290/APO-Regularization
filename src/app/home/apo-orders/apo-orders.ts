@@ -24,6 +24,7 @@ export class ApoOrders implements OnInit {
   enumStatus: any = EnumStatus
   enumRole: any = EnumRole;
   roleId: any;
+  activeTab: any = this.enumStatus.ALL;
 
   constructor(private router: Router, private route: ActivatedRoute) {
   }
@@ -51,6 +52,8 @@ export class ApoOrders implements OnInit {
   }
 
   onTabChange(index: any): void {
+     this.activeTab = index;
+
     if (index === EnumStatus.ALL) {
       this.allData = this.allDataTemp;
     } else if (index === EnumStatus.DRAFT) {

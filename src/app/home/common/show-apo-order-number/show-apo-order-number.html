@@ -19,8 +19,13 @@
                 {{apoOrderNo}}
             </label>
         </div>
-        <button *ngIf="isNewRequest" mat-button class="button-new-request" (click)="newRequestDialog()">
-            + New Request
-        </button>
+<div class="button-container">
+  <button *ngIf="isNewRequest"
+          mat-button
+          class="button-new-request"
+          (click)="newRequestDialog()">
+      + New Request
+  </button>
+</div>
     </div>
 </div>
