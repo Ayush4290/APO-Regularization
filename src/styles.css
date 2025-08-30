@@ -105,6 +105,128 @@ border-bottom-right-radius:0px !important;
 }
 
 
+/* Profile Dropdown Container */
+.profile-dropdown {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #e0e0e0;
+  left: -25px;
+}
+
+/* Profile Header */
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Avatar Icon */
+.avatar .bi-person-circle {
+  font-size: 31px;
+  color: #bab2b2;
+}
+
+/* Name */
+.name {
+  font-weight: 600;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Dropdown Icon */
+.dropdown-icon .bi-chevron-down {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 200px;
+  z-index: 1000;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+  display: none; /* Hide dropdown by default */
+}
+
+.profile-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Dropdown Item */
+.dropdown-item {
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background: #f5f5f5;
+}
+
+.dropdown-item .bi-box-arrow-right {
+  font-size: 16px;
+  color: #666;
+}
+
+
+
+
+.notification  {
+  position: relative;
+  left: -30px;
+}
+.notification i {
+  font-size: 26px;
+  margin-top: 10px;
+  position: relative;
+}
+
+ .notification sup {
+color: white;
+    background-color: red;
+    border-radius: 50px;
+    padding: 1px 8px;
+    font-size: 12px;
+    margin-left: -11px;
+    position: absolute;
+    right: -12px;
+    top: -10px;
+ }
+ .sub-menu{
+  display: none;
+ }
+ .profile:hover .sub-menu{
+  display: block;
+  position: absolute;
+  top: 99%;
+  left: 0;
+  
+ }
+ .search-head{
+  margin-top: 40px;
+  margin-right: 35px;
+ }
+.search-head .mat-mdc-form-field-infix{
+  padding: 10PX 0 !important;
+}
+
+
+
 /*  ------------- STart Product view  ------------*/
 /*  --------- End Css  29-08-25 ----------- */
 
@@ -128,7 +250,7 @@ border-bottom-right-radius:0px !important;
   margin-left: 32px;
 }
 
-.show-apo-num-p {
+.show-apo-num-p, .profile labe {
   font-family: Roboto !important;
   font-weight: 500 !important;
   font-style: Medium !important;
@@ -329,7 +451,7 @@ border-bottom-right-radius:0px !important;
     font-size: 14px !important;
     line-height: 22px !important;
     letter-spacing: 0% !important;
-    margin-right: 80px;
+    margin-right: 65px;
 
 }
 
@@ -367,6 +489,7 @@ border-bottom-right-radius:0px !important;
   display: flex;
   width: 100%;
 }
+
 
 .main-layout-flex.audit {
   width: 22% !important;
@@ -826,6 +949,7 @@ border-bottom-right-radius:0px !important;
   border-bottom: 1px solid #D1D5DB !important;
   display: flex !important;
 }
+
 
 .audit-history-attachment-button {
   gap: 10px !important;

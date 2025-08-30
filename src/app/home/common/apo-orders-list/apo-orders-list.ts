@@ -45,6 +45,7 @@ export class ApoOrdersList implements AfterViewInit, OnChanges, OnInit {
     this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;
   }
+  
 
   ngOnChanges(changes: SimpleChanges): void {
     setTimeout(() => {
@@ -122,6 +123,11 @@ export class ApoOrdersList implements AfterViewInit, OnChanges, OnInit {
     this.dataSource.filter = filterValue.trim().toLowerCase();
   }
 
+  deleteOrder(orderNo: string) {
+  console.log("filter")
+}
+
+
   getStatusClass(id: any): string {
     switch (id) {
       case EnumStatus.DRAFT: return 'draft-button'
@@ -133,6 +139,7 @@ export class ApoOrdersList implements AfterViewInit, OnChanges, OnInit {
       default: return 'responsed-button';
     }
   }
+
 
   goToAPO(orderNo: any, statusId: any) {
     if (statusId == EnumStatus.DRAFT) {
